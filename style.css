@@ -1,0 +1,19 @@
+/* class for google font */
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .custom-gradient {
+    background: linear-gradient(
+      to right,
+      #3752FD 0%,
+      #6C7FFA 53%,
+      #9BA8F8 100%
+    );
+    }
+
+  .custom-border{
+    border-bottom: 2px dashed rgba(55, 82, 253, 0.2);
+  }

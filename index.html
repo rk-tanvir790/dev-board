@@ -7,8 +7,32 @@
     <!-- DaisyUi Added -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google font Added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css file Added -->
+     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-[#F4F7FF] py-3">
+    <!--NavBar Section Started  -->
+    <section class="navbar flex justify-between mx-auto max-w-[1536px] bg-white rounded-2xl px-6 py-5">
+        <!-- left part -->
+         <div class="flex items-center gap-4">
+            <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="logo">
+            <h2 class="poppins-font font-light text-[35px]">Dev<span class="font-bold">Board</span></h2>
+         </div>
+        <!-- right part -->
+         <div class="flex gap-10 items-center">
+            <div class="flex items-center justify-center gap-2 bg-[#F4F7FF] rounded-[32px] h-[64px] w-[120px]">
+                <img src="assets/checkbox.png" alt="checkbox">
+                <p class="poppins-font font-bold text-[32px]">23</p>
+            </div>
+            <div>
+                <img id="color-btn" class="cursor-pointer" src="assets/theme-btn.png" alt="button">
+            </div>
+         </div>
+    </section>
+    <!-- End NavBar Section -->
 </body>
 </html>
