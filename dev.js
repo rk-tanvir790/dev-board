@@ -21,4 +21,10 @@ button.addEventListener('click', function() {
    
 });
 
+// code for Day & Date
 
+const today = new Date();
+const day = today.toLocaleString('en-us', { weekday: 'short' });
+const formattedDate = today.toLocaleDateString('en-us',{month:'short',day:'numeric',year:'numeric'});
+document.getElementById("current-day").innerHTML = day + ',';
+document.getElementById("current-date").innerHTML = formattedDate;

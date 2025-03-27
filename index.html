@@ -16,14 +16,14 @@
 </head>
 <body class="bg-[#F4F7FF] py-3">
     <!--NavBar Section Started  -->
-    <section class="navbar flex justify-between mx-auto max-w-[1536px] bg-white rounded-2xl px-6 py-5">
+      <section class="navbar flex flex-col md:flex-row justify-between mx-auto max-w-[1536px] bg-white rounded-2xl px-6 py-5">
         <!-- left part -->
          <div class="flex items-center gap-4">
             <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="logo">
             <h2 class="poppins-font font-light text-[35px]">Dev<span class="font-bold">Board</span></h2>
          </div>
         <!-- right part -->
-         <div class="flex gap-10 items-center">
+         <div class="flex gap-10 items-center mt-5 md:mt-0">
             <div class="flex items-center justify-center gap-2 bg-[#F4F7FF] rounded-[32px] h-[64px] w-[120px]">
                 <img src="assets/checkbox.png" alt="checkbox">
                 <p class="poppins-font font-bold text-[32px]">23</p>
@@ -32,8 +32,153 @@
                 <img id="color-btn" class="cursor-pointer" src="assets/theme-btn.png" alt="button">
             </div>
          </div>
-    </section>
+      </section>
     <!-- End NavBar Section -->
+    <!-- Main Section Strat -->
+      <section class="rounded-2xl mx-auto max-w-[1536px] flex gap-6 my-5 overflow-hidden">
+      <!-- content Part start -->
+       <div class="w-3/4 bg-white">
+          <!-- top part -->
+       <div class="flex p-6 gap-6 custom-border">
+          <!-- left part -->
+           <div class="bg-[#F4F7FF] rounded-xl flex p-8 gap-5">
+              <div class="bg-white rounded-full h-[64px] w-[64px] flex justify-center items-center">
+                  <img src="assets/checkbox.png" alt="checkbox">
+              </div>
+              <div>
+                  <p class="poppins-font font-medium">Task Assigned</p>
+                  <p class="poppins-font font-bold text-[32px]">06</p>
+              </div>
+           </div>
+          <!-- Middle Part -->
+           <div class="custom-gradient rounded-xl pl-10 pr-[85px] py-6 flex gap-6 items-center">
+              <img src="assets/board.png" alt="">
+              <p class="poppins-font font-medium text-[24px] text-white cursor-pointer">Discover Something<br>New Today!</p>
+           </div>
+          <!-- right part -->
+          <div class="bg-[#F4F7FF] rounded-xl flex p-8 gap-5">
+              <div class="bg-white rounded-full h-[64px] w-[64px] flex justify-center items-center">
+                  <img src="assets/calender.png" alt="calender">
+              </div>
+              <div>
+                  <p class="poppins-font text-[22px]" id="current-day"></p>
+                  <p class="poppins-font font-bold text-[22px]" id="current-date"></p>
+              </div>
+           </div>
+       </div>
+          <!-- Bottom Part -->
+           <div class="cards grid grid-cols-3 gap-9 px-6 py-8">
+              <div class="card bg-[#F4F7FF] rounded-2xl p-6">
+                  <!-- top part -->
+                   <div class="custom-border">
+                      <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">ShopEase</button>
+                      <h2 class="poppins-font font-medium text-2xl my-4">Fix Mobile Button Issue</h2>
+                      <p class="bg-white rounded-lg p-4 mb-4">Debug using Chrome DevTools, check for overlappi....</p>
+                   </div>
+                  <!-- Bottom Part -->
+                   <div class="flex justify-between mt-4">
+                      <!-- left side -->
+                       <div>
+                          <h3 class="poppins-font text-[14px]">Deadline</h3>
+                          <p class="poppins-font font-medium">21 March 2025</p>
+                       </div>
+                      <!-- right side -->
+                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                   </div>
+              </div>
+              <div class="card bg-[#F4F7FF] rounded-2xl p-6">
+                  <!-- top part -->
+                   <div class="custom-border">
+                      <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">CloudSync</button>
+                      <h2 class="poppins-font font-medium text-2xl my-4">Add Dark Mode</h2>
+                      <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
+                   </div>
+                  <!-- Bottom Part -->
+                   <div class="flex justify-between mt-4">
+                      <!-- left side -->
+                       <div>
+                          <h3 class="poppins-font text-[14px]">Deadline</h3>
+                          <p class="poppins-font font-medium">21 March 2025</p>
+                       </div>
+                      <!-- right side -->
+                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                   </div>
+              </div>
+              <div class="card bg-[#F4F7FF] rounded-2xl p-6">
+                  <!-- top part -->
+                   <div class="custom-border">
+                      <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">SwiftPay</button>
+                      <h2 class="poppins-font font-medium text-2xl my-4">Optimize  Home page</h2>
+                      <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
+                   </div>
+                  <!-- Bottom Part -->
+                   <div class="flex justify-between mt-4">
+                      <!-- left side -->
+                       <div>
+                          <h3 class="poppins-font text-[14px]">Deadline</h3>
+                          <p class="poppins-font font-medium">21 March 2025</p>
+                       </div>
+                      <!-- right side -->
+                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                   </div>
+              </div>
+              <div class="card bg-[#F4F7FF] rounded-2xl p-6">
+                  <!-- top part -->
+                   <div class="custom-border">
+                      <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">Meta</button>
+                      <h2 class="poppins-font font-medium text-2xl my-4">Add new emoji 🤲</h2>
+                      <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
+                   </div>
+                  <!-- Bottom Part -->
+                   <div class="flex justify-between mt-4">
+                      <!-- left side -->
+                       <div>
+                          <h3 class="poppins-font text-[14px]">Deadline</h3>
+                          <p class="poppins-font font-medium">21 March 2025</p>
+                       </div>
+                      <!-- right side -->
+                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                   </div>
+              </div>
+              <div class="card bg-[#F4F7FF] rounded-2xl p-6">
+                  <!-- top part -->
+                   <div class="custom-border">
+                      <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">Google LLC</button>
+                      <h2 class="poppins-font font-medium text-2xl my-4">Integrate OpenAI API</h2>
+                      <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
+                   </div>
+                  <!-- Bottom Part -->
+                   <div class="flex justify-between mt-4">
+                      <!-- left side -->
+                       <div>
+                          <h3 class="poppins-font text-[14px]">Deadline</h3>
+                          <p class="poppins-font font-medium">21 March 2025</p>
+                       </div>
+                      <!-- right side -->
+                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                   </div>
+              </div>
+              <div class="card bg-[#F4F7FF] rounded-2xl p-6">
+                  <!-- top part -->
+                   <div class="custom-border">
+                      <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">Glassdoar</button>
+                      <h2 class="poppins-font font-medium text-2xl my-4">Improve Job searching</h2>
+                      <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
+                   </div>
+                  <!-- Bottom Part -->
+                   <div class="flex justify-between mt-4">
+                      <!-- left side -->
+                       <div>
+                          <h3 class="poppins-font text-[14px]">Deadline</h3>
+                          <p class="poppins-font font-medium">21 March 2025</p>
+                       </div>
+                      <!-- right side -->
+                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                   </div>
+              </div>
+           </div>
+       </div>
+      <!-- Content Part End -->
 
     <script src="dev.js"></script>
 </body>
