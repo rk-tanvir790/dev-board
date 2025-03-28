@@ -28,3 +28,20 @@ const day = today.toLocaleString('en-us', { weekday: 'short' });
 const formattedDate = today.toLocaleDateString('en-us',{month:'short',day:'numeric',year:'numeric'});
 document.getElementById("current-day").innerHTML = day + ',';
 document.getElementById("current-date").innerHTML = formattedDate;
+
+// Code for Completed Button
+
+function handleButtonClick(buttonId) {
+    
+    // Disable the clicked button
+    disableBtn('completed-' + buttonId);
+
+    // Increase total count
+    totalCount();
+
+    // Decrease task count
+    taskCount();
+    
+    const cardTitle = document.getElementById('title-' + buttonId).innerText;
+    sidebarComments(cardTitle);
+}

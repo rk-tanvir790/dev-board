@@ -26,7 +26,7 @@
          <div class="flex gap-10 items-center mt-5 md:mt-0">
             <div class="flex items-center justify-center gap-2 bg-[#F4F7FF] rounded-[32px] h-[64px] w-[120px]">
                 <img src="assets/checkbox.png" alt="checkbox">
-                <p class="poppins-font font-bold text-[32px]">23</p>
+                <p id="total-count" class="poppins-font font-bold text-[32px]">23</p>
             </div>
             <div>
                 <img id="color-btn" class="cursor-pointer" src="assets/theme-btn.png" alt="button">
@@ -47,7 +47,7 @@
               </div>
               <div>
                   <p class="poppins-font font-medium">Task Assigned</p>
-                  <p class="poppins-font font-bold text-[32px]">06</p>
+                  <p id="task-count" class="poppins-font font-bold text-[32px]">06</p>
               </div>
            </div>
           <!-- Middle Part -->
@@ -72,7 +72,7 @@
                   <!-- top part -->
                    <div class="custom-border">
                       <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">ShopEase</button>
-                      <h2 class="poppins-font font-medium text-2xl my-4">Fix Mobile Button Issue</h2>
+                      <h2 id="title-1" class="poppins-font font-medium text-2xl my-4">Fix Mobile Button Issue</h2>
                       <p class="bg-white rounded-lg p-4 mb-4">Debug using Chrome DevTools, check for overlappi....</p>
                    </div>
                   <!-- Bottom Part -->
@@ -83,14 +83,14 @@
                           <p class="poppins-font font-medium">21 March 2025</p>
                        </div>
                       <!-- right side -->
-                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                       <button id="completed-1" onclick="handleButtonClick(1)" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
                    </div>
               </div>
               <div class="card bg-[#F4F7FF] rounded-2xl p-6">
                   <!-- top part -->
                    <div class="custom-border">
                       <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">CloudSync</button>
-                      <h2 class="poppins-font font-medium text-2xl my-4">Add Dark Mode</h2>
+                      <h2 id="title-2" class="poppins-font font-medium text-2xl my-4">Add Dark Mode</h2>
                       <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
                    </div>
                   <!-- Bottom Part -->
@@ -101,14 +101,14 @@
                           <p class="poppins-font font-medium">21 March 2025</p>
                        </div>
                       <!-- right side -->
-                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                       <button id="completed-2" onclick="handleButtonClick(2)" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
                    </div>
               </div>
               <div class="card bg-[#F4F7FF] rounded-2xl p-6">
                   <!-- top part -->
                    <div class="custom-border">
                       <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">SwiftPay</button>
-                      <h2 class="poppins-font font-medium text-2xl my-4">Optimize  Home page</h2>
+                      <h2 id="title-3" class="poppins-font font-medium text-2xl my-4">Optimize  Home page</h2>
                       <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
                    </div>
                   <!-- Bottom Part -->
@@ -119,14 +119,14 @@
                           <p class="poppins-font font-medium">21 March 2025</p>
                        </div>
                       <!-- right side -->
-                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                       <button id="completed-3" onclick="handleButtonClick(3)" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
                    </div>
               </div>
               <div class="card bg-[#F4F7FF] rounded-2xl p-6">
                   <!-- top part -->
                    <div class="custom-border">
                       <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">Meta</button>
-                      <h2 class="poppins-font font-medium text-2xl my-4">Add new emoji 🤲</h2>
+                      <h2 id="title-4" class="poppins-font font-medium text-2xl my-4">Add new emoji 🤲</h2>
                       <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
                    </div>
                   <!-- Bottom Part -->
@@ -137,14 +137,14 @@
                           <p class="poppins-font font-medium">21 March 2025</p>
                        </div>
                       <!-- right side -->
-                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                       <button id="completed-4" onclick="handleButtonClick(4)" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
                    </div>
               </div>
               <div class="card bg-[#F4F7FF] rounded-2xl p-6">
                   <!-- top part -->
                    <div class="custom-border">
                       <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">Google LLC</button>
-                      <h2 class="poppins-font font-medium text-2xl my-4">Integrate OpenAI API</h2>
+                      <h2 id="title-5" class="poppins-font font-medium text-2xl my-4">Integrate OpenAI API</h2>
                       <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
                    </div>
                   <!-- Bottom Part -->
@@ -155,14 +155,14 @@
                           <p class="poppins-font font-medium">21 March 2025</p>
                        </div>
                       <!-- right side -->
-                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                       <button id="completed-5" onclick="handleButtonClick(5)" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
                    </div>
               </div>
               <div class="card bg-[#F4F7FF] rounded-2xl p-6">
                   <!-- top part -->
                    <div class="custom-border">
                       <button class="poppins-font font-normal px-4 py-2 cursor-pointer bg-white rounded-lg">Glassdoar</button>
-                      <h2 class="poppins-font font-medium text-2xl my-4">Improve Job searching</h2>
+                      <h2 id="title-6" class="poppins-font font-medium text-2xl my-4">Improve Job searching</h2>
                       <p class="bg-white rounded-lg p-4 mb-4">Store the user's preference in localStorage, update CSS vari....</p>
                    </div>
                   <!-- Bottom Part -->
@@ -173,7 +173,7 @@
                           <p class="poppins-font font-medium">21 March 2025</p>
                        </div>
                       <!-- right side -->
-                       <button class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
+                       <button id="completed-6" onclick="handleButtonClick(6)" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Completed</button>
                    </div>
               </div>
            </div>
@@ -189,10 +189,17 @@
              </div>
                  <button class="px-5 py-[10px] mt-4 poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Clear History</button>
           </div>
+         <!-- Dynamic Comments Part -->
+          <div class="">
+            <ul id="comments-list" >
+
+            </ul>
+          </div>
+
       </div>
      <!-- Aside Part End -->
    </section>
-
+   <script src="utilities.js"></script>
    <script src="dev.js"></script>
 </body>
 </html>
