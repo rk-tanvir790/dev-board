@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- DaisyUi Added -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google font Added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css file Added -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F4F7FF] py-3">
+   <!--NavBar Section Started  -->
+     <section class="navbar flex flex-col gap-5 md:flex-row justify-between mx-auto max-w-[1536px] bg-white rounded-2xl px-6 py-5">
+        <!-- left part -->
+            <div class="flex items-center gap-4">
+                <img class="w-[51px] h-[51px]" src="assets/logo.png" alt="logo">
+                <h2 class="poppins-font font-light text-[35px]">Dev<span class="font-bold">Board</span></h2>
+            </div>
+      <!-- right part -->
+        <div>
+            <button id="back-desk" class="px-5 py-[10px] poppins-font font-medium text-white  rounded-lg bg-[#3752FD] cursor-pointer">Back to Desk</button>
+        </div>
+     </section>
+    <!-- End NavBar Section -->
+    <!-- Blog Title -->
+     <div class="mx-auto max-w-[1536px] my-5">
+        <h1 class="text-center poppins-font font-bold text-[35px]">Blogs</h1>
+     </div>
+    <!-- Question Section -->
+     <section class="mx-auto max-w-[1536px] my-5">
+        <div class="bg-white p-5 rounded-xl mb-5 mx-2">
+            <h3 class="poppins-font font-semibold text-xl custom-border pb-5">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p class="md:max-w-[95%] mt-8 poppins-font text-slate-700 text-base">Most common methods are: getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll().</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl mb-5 mx-2">
+            <h3 class="poppins-font font-semibold text-xl custom-border pb-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <p class="md:max-w-[95%] mt-8 poppins-font text-slate-700 text-base">Common difference are: <br>innerHTML: Gets or sets HTML content, including tags. <br> innerText: Gets or sets the visible text content, considering styles and visibility. <br> textContent: Gets or sets the raw text content, without HTML tags, including hidden content.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl mb-5 mx-2">
+            <h3 class="poppins-font font-semibold text-xl custom-border pb-5">Question-3: What is event delegation in the DOM?</h3>
+            <p class="md:max-w-[95%] mt-8 poppins-font text-slate-700 text-base">Event delegation is an efficient way to handle events on dynamically added elements or many elements.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl mb-5 mx-2">
+            <h3 class="poppins-font font-semibold text-xl custom-border pb-5">Question-4: What is event bubbling in the DOM?</h3>
+            <p class="md:max-w-[95%] mt-8 poppins-font text-slate-700 text-base">Event bubbling is the process where an event, triggered on a child element, propagates up to its ancestors in the DOM hierarchy.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl mb-5 mx-2">
+            <h3 class="poppins-font font-semibold text-xl custom-border pb-5">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <p class="md:max-w-[95%] mt-8 poppins-font text-slate-700 text-base">Creating Elements: document.createElement() <br> Adding Elements: appendChild() <br> Removing Elements: remove()</p>
+        </div>
+     </section>
+
+     <script src="utilities.js"></script>
+     <script src="dev.js"></script>
+</body>
+</html>

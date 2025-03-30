@@ -13,12 +13,6 @@ const button = document.getElementById('color-btn');
 
 button.addEventListener('click', function() {
     document.body.style.backgroundColor = getRandomColor();
-
-    
-        // const color1 = getRandomColor();
-        // const color2 = getRandomColor();
-        // document.body.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
-   
 });
 
 // code for Day & Date
@@ -32,6 +26,8 @@ document.getElementById("current-date").innerHTML = formattedDate;
 // Code for Completed Button
 
 function handleButtonClick(buttonId) {
+    // alart 01
+    alert('Board Updated Successfully');
     
     // Disable the clicked button
     disableBtn('completed-' + buttonId);
@@ -44,4 +40,23 @@ function handleButtonClick(buttonId) {
     
     const cardTitle = document.getElementById('title-' + buttonId).innerText;
     sidebarComments(cardTitle);
+    
+    // Alert Function after complete 6 task
+    allTaskCompleteAlert();
 }
+
+// Code for Clear History Button
+
+const clearHistoryBtn = document.getElementById("clear-history");
+clearHistoryBtn.addEventListener("click",function(){
+    const commentsSection = document.getElementById("comments-section");
+    commentsSection.style.display='none';  
+});
+
+// Code for Discover Somthing Button
+
+const discoverBtn = document.getElementById("discover-somthing");
+discoverBtn.addEventListener("click",function(){
+    window.location.href="blog.html";
+});
+

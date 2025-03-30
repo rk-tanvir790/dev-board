@@ -16,6 +16,16 @@ function taskCount() {
         totalTaskCountBtn.innerText = sum;
 }
 
+// Re-useable Function For Alert
+
+function allTaskCompleteAlert() {
+    const taskCount = document.getElementById("task-count");
+    const convertedTaskCount = parseInt(taskCount.innerText);
+    if (convertedTaskCount === 0) {
+        alert("Congrates!!! You Have completed All The current Task");
+    }
+}
+
 // Re-useable Function For Button Disable
 
 function disableBtn(id) {
@@ -57,3 +67,9 @@ function sidebarComments(title) {
     commentWrapper.appendChild(commentItem);
     commentsElement.appendChild(commentWrapper);
 }
+
+
+const backDeskBtn = document.getElementById("back-desk");
+backDeskBtn.addEventListener("click", function() {
+    window.location.href = "index.html";
+});
